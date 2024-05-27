@@ -1,0 +1,48 @@
+<script>
+
+    // var motor = 
+    // [
+    //     ["nmax", "aerox", "mio"],
+    //     ["pcx", "vario", "beat"],
+    //     ["gsx", "nex", "smash"],
+    // ]
+    // console.log(motor[2][0]);
+
+    var murid = [
+        [1, "vincent", 3.51],
+        [2, "udin", 3.0],
+        [3, "mamang", 2.1],
+        [4, "andre", 3.1],
+        [5, "ivana", 1.1],
+        [6, "ivana", 1.],
+    ]
+    var vincent_no = murid[0][0] + ". ";
+    var vincent_nama = murid[0][1] + ". ";
+    var vincent_ipk ="ipk = " + murid[1][2] + " ";
+    var vincent_status = (murid[0][2] >= 3.0) ? "lulus" : "tidak lulus"; //if else versi sebaris (ternary operator)
+
+    var udin_no = murid[1][0] + ". ";
+    var udin_nama = murid[1][1] + ". ";
+    var udin_ipk ="ipk = " + murid[1][2] + " ";
+    var udin_status = (murid[1][2] >= 3.0) ? "lulus" : "tidak lulus"; //if else versi sebaris (ternary operator)
+
+    var mamang_no = murid[2][0] + ". ";
+    var mamang_nama = murid[2][1] + ". ";
+    var mamang_ipk ="ipk = " + murid[1][2] + " ";
+    var mamang_status = (murid[2][2] >= 3.0) ? "lulus" : "tidak lulus"; //if else versi sebaris (ternary operator)
+
+    // document.write(murid[0][0]+"." + murid[0][1] + " ipk = " + murid[0][2]);
+    // document.write(vincent_no + vincent_nama + vincent_ipk + vincent_status + "<br>"); 
+    // document.write(udin_no + udin_nama + udin_ipk + udin_status + "<br>");
+    // document.write(mamang_no + mamang_nama + mamang_ipk + mamang_status);
+
+    for (let i=0; i < murid.length; i++) {
+        var no          = murid[i][0] + ". ";
+        var nama        = murid[i][1] + ". ";
+        var ipk         = "ipk = " + murid[i][2] + " ";
+        var status      = (murid[i][2] >= 3.0) ? '<span style="color: blue;">lulus</span>' : '<span style="color: red;">gagal</span>';
+    
+        document.write(no + nama + ipk + status + "<br>");
+    }
+
+</script> 
